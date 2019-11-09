@@ -18,6 +18,7 @@ switch (input) {
         break;
     case ("movie-this"):
         console.log("movie-this");
+        getMovie(details)
         break;
     case ("do-what-it-says"):
         console.log("do-what-it-says")
@@ -62,4 +63,25 @@ function getSong(input) {
         console.log(data.tracks.items[0].album.name);
 
     })
+}
+
+function getMovie(input) {
+
+    if (!input) {
+        input = "Mr Nobody";
+    }
+    axios.get("https://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy")
+        .then(function(response) {
+            console.log("Title " + response.data.Title);
+            console.log("Release Year: " + response.data.Year);
+            console.log("IMDB rating: " + response.data.imdbRating);
+            console.log("Rotten Tomatoes score: " + response.data.Ratings[1].Value)
+            console.log("Country of Production: " + response.data.Country)
+            console.log("Language: " + response.data.Language);
+            console.log("Plot: " + response.data.Plot);
+            console.log("Actors: " + response.data.Actors);
+
+
+        })
+
 }
