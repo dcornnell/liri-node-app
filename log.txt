@@ -1,3 +1,89 @@
 
- Command:movie-this Details: Shaft
+
+ Venue: Madison Square Garden Date: 12/13/2019 at 07:00pm
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/18/2020 at 03:30am
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/19/2020 at 03:30am
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/25/2020 at 07:00pm
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/26/2020 at 07:00pmCity: Foxborough, MA
+ Venue: Gillette Stadium Date: 07/31/2020 at 07:00pmCity: Foxborough, MA
+ Venue: Gillette Stadium Date: 08/01/2020 at 07:00pmCity: New York, NY
+ Command:concert-this Details: Taylor Swift
  _______________________________ 
+
+ Venue: Madison Square Garden
+ Venue: Allianz Parque Date: 12/13/2019 at 07:00pm Date: 07/18/2020 at 03:30amCity: Sao Paulo, null
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/19/2020 at 03:30amCity: New York, NY
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/25/2020 at 07:00pm
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/26/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 07/31/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 08/01/2020 at 07:00pm
+ Command:concert-this Details: Taylor Swift
+ Venue: Madison Square GardenCity: New York, NY Date: 12/13/2019 at 07:00pm
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/18/2020 at 03:30am
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/19/2020 at 03:30am
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/25/2020 at 07:00pm
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/26/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 07/31/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 08/01/2020 at 07:00pm
+ ____________________________
+ Command:concert-this Details: Taylor Swift
+ Venue: Madison Square GardenCity: New York, NY Date: 12/13/2019 at 07:00pm
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/18/2020 at 03:30am
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/19/2020 at 03:30am
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/25/2020 at 07:00pm
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/26/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 07/31/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 08/01/2020 at 07:00pm
+ ____________________________
+ Command:concert-this Details: Taylor Swift
+ Venue: Madison Square Garden Date: 07/18/2020 at 03:30am
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 07/19/2020 at 03:30am
+ Venue: SoFi StadiumCity: Inglewood, CA Date: 07/25/2020 at 07:00pm
+ Venue: SoFi StadiumCity: Inglewood, CACity: New York, NY Date: 07/26/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 07/31/2020 at 07:00pm
+ Venue: Gillette StadiumCity: Foxborough, MA Date: 08/01/2020 at 07:00pm
+ Venue: Allianz ParqueCity: Sao Paulo, null Date: 12/13/2019 at 07:00pm
+ ____________________________
+ Command:spotify-this-song Details: sweat leaf
+ ____________________________
+ Command:spotify-this-song Details: sweat leafARTIST: KrondonEverything's Nothing (Digitally Remastered Deluxe Edition)LINK: https://open.spotify.com/track/5MPPI04xjIa5JcXTzAsaXI
+ ____________________________
+ Command:spotify-this-song Details: hate it or love it
+ ARTIST: The Game
+ LINK: https://open.spotify.com/track/2wGSgTmgSF3xjRrHkTc25RThe Documentary
+ ____________________________
+ Command:spotify-this-song Details: eat it
+ ARTIST: Comethazine
+ LINK: https://open.spotify.com/track/63KKvdfkStMHQM4Ufzx2KB
+Bawskee
+ ____________________________
+ Command:spotify-this-song Details: beat it
+ ARTIST: Michael Jackson
+ Album: Thriller 25 Super Deluxe Edition
+ LINK: https://open.spotify.com/track/1OOtq8tRnDM8kG2gqUPjAj
+ ____________________________
+ Command:movie-this Details: up
+ ____________________________
+ Command:movie-this Details: upTitle UpRelease Year: 2009IMDB rating: 8.2Rotten Tomatoes score: 98%Country of Production: USALanguage: EnglishPlot: Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.Actors: Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson
+ ____________________________
+ Command:movie-this Details: up
+Title Up
+IMDB rating: 8.2
+Plot: Seventy-eight year old Carl Fredricksen travels to Paradise Falls in his home equipped with balloons, inadvertently taking a young stowaway.
+Actors: Edward Asner, Christopher Plummer, Jordan Nagai, Bob Peterson
+Release Year: 2009
+Language: English
+Country of Production: USA
+Rotten Tomatoes score: 98%
+ ____________________________
+ Command:do-what-it-says Details: 
+ Venue: ElsewhereCity: Brooklyn, NY Date: 11/14/2019 at 08:00pm
+ Venue: 9:30 ClubCity: Washington, DC Date: 11/16/2019 at 08:00pm
+ Venue: Big Night LiveCity: Boston, MA Date: 11/17/2019 at 07:30pm
+ Venue: L'AstralCity: Montreal, QC Date: 11/20/2019 at 08:00pm
+ Venue: Velvet UndergroundCity: Toronto, ON Date: 11/21/2019 at 08:00pm
+ Venue: El ClubCity: Detroit, MI Date: 11/22/2019 at 07:00pm
+ Venue: MetroCity: Chicago, IL Date: 11/23/2019 at 09:00pm
+ Venue: Turf ClubCity: Saint Paul, MN Date: 11/24/2019 at 08:00pm
+ Venue: SlowdownCity: Omaha, NE Date: 11/26/2019 at 08:00pm
+ Venue: Bluebird TheaterCity: Denver, CO Date: 11/27/2019 at 08:00pm

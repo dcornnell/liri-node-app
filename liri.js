@@ -9,11 +9,10 @@ const moment = require('moment');
 let input = process.argv[2]
 let details = process.argv.slice(3).join(" ")
 console.log("________________________________")
+addToLog("\n ____________________________\n Command:" + input + " Details: " + details)
 inputChoice(input, details)
-fs.appendFile('log.txt', '\n Command:' + input + " Details: " + details + "\n _______________________________ \n", (err) => {
-    if (err) throw err;
-    console.log('The "data to append" was appended to file!');
-});
+
+
 
 function inputChoice(input, details) {
     switch (input) {
@@ -46,13 +45,20 @@ function getConcert(input) {
 
             for (let i = 0; i < response.data.events.length; i++) {
 
-                console.log("______________")
+                console.log("______________\n")
                 console.log("Venue: " + response.data.events[i].venue.name);
                 console.log("City: " + response.data.events[i].venue.city + ", " +
                     response.data.events[i].venue.state);
                 const date = response.data.events[i].datetime_local;
                 moment(date).format('MM/DD/YYYY')
                 console.log("Date: " + moment(date).format('MM/DD/YYYY [at] hh:mma'));
+
+                addToLog("\n Venue: " + response.data.events[i].venue.name);
+                addToLog("City: " + response.data.events[i].venue.city + ", " +
+                    response.data.events[i].venue.state);
+
+                addToLog(" Date: " + moment(date).format('MM/DD/YYYY [at] hh:mma'));
+
             }
         })
 }
@@ -74,7 +80,11 @@ function getSong(input) {
 
         console.log('ARTIST: ' + data.tracks.items[0].artists[0].name);
         console.log('LINK: ' + data.tracks.items[0].external_urls.spotify);
-        console.log(data.tracks.items[0].album.name);
+        console.log('Album: ' + data.tracks.items[0].album.name);
+
+        addToLog('\n ARTIST: ' + data.tracks.items[0].artists[0].name);
+        addToLog('\n LINK: ' + data.tracks.items[0].external_urls.spotify);
+        addToLog('\n Album: ' + data.tracks.items[0].album.name);
 
     })
 }
@@ -95,6 +105,14 @@ function getMovie(input) {
             console.log("Plot: " + response.data.Plot);
             console.log("Actors: " + response.data.Actors);
 
+            addToLog("\nTitle " + response.data.Title);
+            addToLog("\nRelease Year: " + response.data.Year);
+            addToLog("\nIMDB rating: " + response.data.imdbRating);
+            addToLog("\nRotten Tomatoes score: " + response.data.Ratings[1].Value)
+            addToLog("\nCountry of Production: " + response.data.Country)
+            addToLog("\nLanguage: " + response.data.Language);
+            addToLog("\nPlot: " + response.data.Plot);
+            addToLog("\nActors: " + response.data.Actors);
 
         })
 
@@ -107,5 +125,12 @@ function doIt(input) {
         input = contentArray[0];
         details = contentArray[1];
         inputChoice(input, details);
+    });
+}
+
+function addToLog(input) {
+    fs.appendFile('log.txt', input, (err) => {
+        if (err) throw err;
+
     });
 }
