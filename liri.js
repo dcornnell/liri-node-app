@@ -1,42 +1,52 @@
 require('dotenv').config();
+const fs = require('fs');
 const Spotify = require('node-spotify-api');
 const keys = require("./keys.js");
 const spotify = new Spotify(keys.spotify);
 const axios = require('axios').default;
 const moment = require('moment');
 
-const input = process.argv[2]
-const details = process.argv[3]
-switch (input) {
-    case ("concert-this"):
-        console.log("concert this");
-        getConcert(details);
-        break;
-    case ("spotify-this-song"):
-        console.log("spotify")
-        getSong(details)
-        break;
-    case ("movie-this"):
-        console.log("movie-this");
-        getMovie(details)
-        break;
-    case ("do-what-it-says"):
-        console.log("do-what-it-says")
-        break;
-    default:
-        console.log("not an excepted input");
+let input = process.argv[2]
+let details = process.argv[3]
+
+inputChoice(input, details)
+
+function inputChoice(input, details) {
+    switch (input) {
+        case ("concert-this"):
+
+            getConcert(details);
+            break;
+        case ("spotify-this-song"):
+
+            getSong(details);
+            break;
+        case ("movie-this"):
+
+            getMovie(details);
+            break;
+        case ("do-what-it-says"):
+
+            doIt(details);
+            break;
+        default:
+            console.log("not an excepted input");
+
+    }
 }
 
 function getConcert(input) {
 
-    axios.get("https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp")
+    axios.get("https://api.seatgeek.com/2/events?client_id=MTk0MjgyMDJ8MTU3MzU2OTAzNy40Ng&q=" + input)
         .then(function(response) {
-            for (let i = 0; i < response.data.length; i++) {
+            console.log(response.data)
+            for (let i = 0; i < response.data.events.length; i++) {
+
                 console.log("______________")
-                console.log("Venue: " + response.data[i].venue.name);
-                console.log("City: " + response.data[i].venue.city + ", " +
-                    response.data[i].venue.region);
-                const date = response.data[i].datetime;
+                console.log("Venue: " + response.data.events[i].venue.name);
+                console.log("City: " + response.data.events[i].venue.city + ", " +
+                    response.data.events[i].venue.state);
+                const date = response.data.events[i].datetime_local;
                 moment(date).format('MM/DD/YYYY')
                 console.log("Date: " + moment(date).format('MM/DD/YYYY [at] hh:mma'));
             }
@@ -84,4 +94,14 @@ function getMovie(input) {
 
         })
 
+}
+
+function doIt(input) {
+    fs.readFile('random.txt', 'utf8', function(err, contents) {
+        const contentArray = contents.split(",");
+
+        input = contentArray[0];
+        details = contentArray[1];
+        inputChoice(input, details);
+    });
 }
