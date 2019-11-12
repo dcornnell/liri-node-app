@@ -7,8 +7,8 @@ const axios = require('axios').default;
 const moment = require('moment');
 
 let input = process.argv[2]
-let details = process.argv[3]
-
+let details = process.argv.slice(3).join(" ")
+console.log("________________________________")
 inputChoice(input, details)
 
 function inputChoice(input, details) {
@@ -39,7 +39,7 @@ function getConcert(input) {
 
     axios.get("https://api.seatgeek.com/2/events?client_id=MTk0MjgyMDJ8MTU3MzU2OTAzNy40Ng&q=" + input)
         .then(function(response) {
-            console.log(response.data)
+
             for (let i = 0; i < response.data.events.length; i++) {
 
                 console.log("______________")
