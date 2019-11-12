@@ -10,6 +10,10 @@ let input = process.argv[2]
 let details = process.argv.slice(3).join(" ")
 console.log("________________________________")
 inputChoice(input, details)
+fs.appendFile('log.txt', '\n Command:' + input + " Details: " + details + "\n _______________________________ \n", (err) => {
+    if (err) throw err;
+    console.log('The "data to append" was appended to file!');
+});
 
 function inputChoice(input, details) {
     switch (input) {
