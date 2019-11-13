@@ -75,7 +75,8 @@ function getSong(input) {
             return console.log("Error occurred: " + err)
         }
         const info = data.tracks.items[0]
-        const dataString = `\n\nArtist: ${info.artists[0].name}
+        const dataString = `\n\nSong: ${info.name}
+Artist: ${info.artists[0].name}
 Link: ${info.external_urls.spotify}
 Album: ${info.album.name }`
 
