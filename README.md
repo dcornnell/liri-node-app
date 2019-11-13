@@ -11,22 +11,23 @@ This app takes in a users command as well as the search query or details. it the
 ``` npm install ```
 3. to actually run this app you will need to have a spotify developer tools and set up a .env file
 4. commands
-``` node liri.js concert-this (band name) ```
-```node liri.js movie-this (movie title)```
-``` node liri.js spotify-this-song (song title)```
-```node liri.js do-what it says```
+```node liri.js concert-this (band name) 
+node liri.js movie-this (movie title)
+node liri.js spotify-this-song (song title)
+node liri.js do-what it says
+```
 
 ## Technologies Used 
--Javascript
--Node
--modules
-    -[fs](https://nodejs.org/api/fs.html) 
-    -[spotify](https://www.npmjs.com/package/node-spotify-api)
-    -[axious](https://www.npmjs.com/package/axios)
-    -[module](https://momentjs.com/)
-    -[dotenv](https://www.npmjs.com/package/dotenv)
--API 
-    - [OMDB](http://omdbapi.com/)
-    - [Spotify](https://developer.spotify.com/)
-    - [seatgeek](https://platform.seatgeek.com/)
+*Javascript
+*Node
+*modules
+    *[fs](https://nodejs.org/api/fs.html) 
+    *[spotify](https://www.npmjs.com/package/node-spotify-api)
+    *[axious](https://www.npmjs.com/package/axios)
+    *[module](https://momentjs.com/)
+    *[dotenv](https://www.npmjs.com/package/dotenv)
+*API 
+    *[OMDB](http://omdbapi.com/)
+    *[Spotify](https://developer.spotify.com/)
+    *[seatgeek](https://platform.seatgeek.com/)
  
