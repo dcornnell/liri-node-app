@@ -5,17 +5,17 @@ const keys = require("./keys.js");
 const spotify = new Spotify(keys.spotify);
 const axios = require('axios').default;
 const moment = require('moment');
-
+//takes in the users input
 let input = process.argv[2]
+    // all values after the second in the array are joined into a string
 let details = process.argv.slice(3).join(" ")
 console.log("________________________________")
-
 addToLog(`\nCommand: ${input} Details: ${details}
 ___________________________________________`)
 inputChoice(input, details)
 
 
-
+//looks at the users command and calls appropriate function
 function inputChoice(input, details) {
     switch (input) {
         case ("concert-this"):
@@ -110,7 +110,7 @@ Plot: ${info.Plot }`
         })
 
 }
-
+// reads the random.txt file and makes a inputchoice function call
 function doIt(input) {
     fs.readFile('random.txt', 'utf8', function(err, contents) {
         const contentArray = contents.split(",");
@@ -120,7 +120,7 @@ function doIt(input) {
         inputChoice(input, details);
     });
 }
-
+// adds the resposne to a log file.
 function addToLog(input) {
     fs.appendFile('log.txt', input, (err) => {
         if (err) throw err;
