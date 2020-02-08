@@ -34,6 +34,11 @@ function inputChoice(input, details) {
       getWeather(details);
       break;
 
+    case "help-with-key":
+      console.log(
+        `To get the spotify feature to work you will have to get a spotify Spotify ID and Secret from spotify devs, to get the weather to work you will need a key from open weather api. then create a .env file and add SPOTIFY_ID SPOTIFY_SECRET and WEATHER_KEY to the file.`
+      );
+
     default:
       console.log(
         "not an excepted input please try one of the following \n node liri.js concert-this [band name] --- gets concert details \n node liri.js spotify-this-song [song name] --- gets song details(this requires you to set up the .env file) \n node liri.js movie-this [movie tite] --- movie details \n node liri.js do-what-it-says --- this will do what ever command is in the random.txt file \n node liri.js get-weather-for [city name] --- gets the weather for a city (requires an openweather api key)"
