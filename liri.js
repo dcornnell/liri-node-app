@@ -35,7 +35,9 @@ function inputChoice(input, details) {
       break;
 
     default:
-      console.log("not an excepted input");
+      console.log(
+        "not an excepted input please try one of the following \n node liri.js concert-this [band name] --- gets concert details \n node liri.js spotify-this-song [song name] --- gets song details(this requires you to set up the .env file) \n node liri.js movie-this [movie tite] --- movie details \n node liri.js do-what-it-says --- this will do what ever command is in the random.txt file \n node liri.js get-weather-for [city name] --- gets the weather for a city (requires an openweather api key)"
+      );
   }
 }
 

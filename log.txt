@@ -92,3 +92,15 @@ Command: get-weather-for Details: Tampa
 ___________________________________________
 Command: get-weather-for Details: Tampa
 ___________________________________________
+Command: undefined Details: 
+___________________________________________
+Command: undefined Details: 
+___________________________________________
+Command: undefined Details: 
+___________________________________________
+Command: undefined Details: 
+___________________________________________
+Command: undefined Details: 
+___________________________________________
+Command: undefined Details: 
+___________________________________________
