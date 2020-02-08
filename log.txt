@@ -64,3 +64,31 @@ Song: I Want It That Way
 Artist: Backstreet Boys
 Link: https://open.spotify.com/track/6e40mgJiCid5HRAGrbpGA6
 Album: The Hits--Chapter One
+Command: spotify-this-song Details: black cow
+___________________________________________
+
+Song: Black Cow
+Artist: Steely Dan
+Link: https://open.spotify.com/track/66e2KstOkIo6V9PyDXWo3w
+Album: Aja
+Command: spotify-this-song Details: black cow
+___________________________________________
+
+Song: Black Cow
+Artist: Steely Dan
+Link: https://open.spotify.com/track/66e2KstOkIo6V9PyDXWo3w
+Album: Aja
+Command: get-weather-for Details: Paris
+___________________________________________
+Command: get-weather-for Details: Paris
+___________________________________________
+Command: get-weather-for Details: Paris
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
