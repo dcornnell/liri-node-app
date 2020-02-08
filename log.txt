@@ -104,3 +104,19 @@ Command: undefined Details:
 ___________________________________________
 Command: undefined Details: 
 ___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________
+Command: get-weather-for Details: Tampa
+___________________________________________

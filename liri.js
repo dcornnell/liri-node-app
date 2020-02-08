@@ -121,7 +121,14 @@ function getWeather(input) {
       `http://api.openweathermap.org/data/2.5/weather?q=${input}&appid=${process.env.WEATHER_KEY}&units=imperial`
     )
     .then(function(response) {
-      console.log(response.data);
+      const info = response.data;
+      console.log(
+        `the Weather in ${info.name}
+Description: ${info.weather[0].description}
+Temp: ${info.main.temp}
+Humidity: ${info.main.humidity}
+`
+      );
     });
 }
 // reads the random.txt file and makes a inputchoice function call
